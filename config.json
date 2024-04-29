@@ -1,0 +1,29 @@
+{
+  "authors": [
+    "Pollefeys",
+    "Jingrui"
+  ],
+
+  "categories": [
+    "cs.AI",
+    "cs.CG",
+    "cs.CV",
+    "cs.GR",
+    "cs.LG",
+    "cs.RO",
+    "cs.SY"
+  ],
+
+  "keywords": [
+    "SLAM",
+    "SFM",
+    "Localization",
+    "Mapping",
+    "Feature",
+    "NeRF",
+    "Gaussian Splatting"
+  ],
+
+  "max_results": 3,
+  "days_back": 7
+}
