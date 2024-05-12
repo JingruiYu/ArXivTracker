@@ -1,9 +1,9 @@
 {
   "authors": [
     "Pollefeys",
-    "Jingrui"
+    "Jingrui",
+    "Ziming"
   ],
-
   "categories": [
     "cs.AI",
     "cs.CG",
@@ -13,17 +13,13 @@
     "cs.RO",
     "cs.SY"
   ],
-
   "keywords": [
-    "SLAM",
     "SFM",
-    "Localization",
-    "Mapping",
-    "Feature",
+    "SLAM",
     "NeRF",
-    "Gaussian Splatting"
+    "Splatting",
+    "KANs"
   ],
-
   "max_results": 3,
   "days_back": 7
 }
