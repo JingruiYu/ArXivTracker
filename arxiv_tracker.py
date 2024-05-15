@@ -24,8 +24,8 @@ def search_and_print_papers(query,
 
     try:
         results = list(client.results(search))
-    except arxiv.exceptions.SearchResultError:
-        print("No papers found.")
+    except arxiv.UnexpectedEmptyPageError as e:
+        print(f"Error: no result ...")
         return
 
     if days_back:
@@ -58,17 +58,17 @@ days_back = config["days_back"]
 
 client = arxiv.Client()
 
-# print(f"Searching for latest papers by authors: {', '.join(authors)}")
-# for author in authors:
-#     print(f"\nLatest {max_results} papers by {author}:")
-#     search_and_print_papers(f"au:{author}", max_results,
-#                             arxiv.SortCriterion.SubmittedDate)
+print(f"Searching for latest papers by authors: {', '.join(authors)}")
+for author in authors:
+    print(f"\nLatest {max_results} papers by {author}:")
+    search_and_print_papers(f"au:{author}", max_results,
+                            arxiv.SortCriterion.SubmittedDate)
 
-# print(f"\nSearching for latest papers in categories: {', '.join(categories)}")
-# for cat in categories:
-#     print(f"\nLatest {max_results} papers in {cat}:")
-#     search_and_print_papers(f"cat:{cat}", max_results,
-#                             arxiv.SortCriterion.SubmittedDate)
+print(f"\nSearching for latest papers in categories: {', '.join(categories)}")
+for cat in categories:
+    print(f"\nLatest {max_results} papers in {cat}:")
+    search_and_print_papers(f"cat:{cat}", max_results,
+                            arxiv.SortCriterion.SubmittedDate)
 
 print(
     f"\nSearching for papers in the last {days_back} days with keywords: {', '.join(keywords)}"
