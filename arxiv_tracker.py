@@ -55,6 +55,7 @@ categories = config["categories"]
 keywords = config["keywords"]
 max_results = config["max_results"]
 days_back = config["days_back"]
+institutions = config["institutions"]
 
 client = arxiv.Client()
 
@@ -78,3 +79,8 @@ for keyword in keywords:
     search_and_print_papers(f"all:{keyword}", 17,
                             arxiv.SortCriterion.SubmittedDate,
                             arxiv.SortOrder.Descending, days_back)
+
+print(f"Searching for latest papers by institutions: {', '.join(institutions)}")
+for institution in institutions:
+    print(f"\nLatest {max_results} papers by {institution}:")
+    search_and_print_papers(f"all:{institution}", 17, arxiv.SortCriterion.SubmittedDate, arxiv.SortOrder.Descending, days_back)

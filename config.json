@@ -21,6 +21,11 @@
     "KANs",
     "Feature"
   ],
+  "institutions": [
+    "NVIDIA",
+    "Meta",
+    "Google"
+  ],
   "max_results": 10,
   "days_back": 14
 }
