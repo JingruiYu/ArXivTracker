@@ -75,6 +75,6 @@ print(
 )
 for keyword in keywords:
     print(f"\nPapers with keyword '{keyword}' in the last {days_back} days:")
-    search_and_print_papers(f"all:{keyword}", float('inf'),
+    search_and_print_papers(f"all:{keyword}", 17,
                             arxiv.SortCriterion.SubmittedDate,
                             arxiv.SortOrder.Descending, days_back)

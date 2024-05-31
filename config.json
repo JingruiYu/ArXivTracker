@@ -18,8 +18,9 @@
     "SLAM",
     "NeRF",
     "Splatting",
-    "KANs"
+    "KANs",
+    "Feature"
   ],
-  "max_results": 3,
-  "days_back": 7
+  "max_results": 10,
+  "days_back": 14
 }
