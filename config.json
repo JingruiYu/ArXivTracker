@@ -1,9 +1,9 @@
 {
   "authors": [
     "Pollefeys",
-    "Jingrui",
-    "Ziming",
-    "Scaramuzza"
+    "Guoquan",
+    "Scaramuzza",
+    "Minyang"
   ],
   "categories": [
     "cs.AI",
@@ -18,8 +18,7 @@
     "SLAM",
     "NeRF",
     "Splatting",
-    "KANs",
-    "Feature"
+    "Diffusion"
   ],
   "institutions": [
     "NVIDIA",
@@ -27,5 +26,5 @@
     "Google"
   ],
   "max_results": 10,
-  "days_back": 14
+  "days_back": 20
 }
